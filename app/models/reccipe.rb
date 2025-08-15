@@ -1,0 +1,2 @@
+class Reccipe < ApplicationRecord
+end

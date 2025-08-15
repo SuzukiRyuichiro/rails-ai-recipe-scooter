@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reccipes</h1>
+
+<div id="reccipes">
+  <% @reccipes.each do |reccipe| %>
+    <%= render reccipe %>
+    <p>
+      <%= link_to "Show this reccipe", reccipe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reccipe", new_reccipe_path %>
